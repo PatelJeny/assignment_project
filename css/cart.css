@@ -1,0 +1,4 @@
+.fixed-cart {
+    max-width: 300px; /* Set the maximum width of the cart */
+    margin: 0 auto; /* Center the cart horizontally */
+  }
