@@ -1,6 +1,5 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'] . '/utils/db.php');
-
+require_once(__DIR__ . '/../utils/db.php');
 
 
 class Category

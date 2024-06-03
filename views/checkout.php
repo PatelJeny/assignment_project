@@ -14,7 +14,7 @@
 
     <div class="container py-3">
         <h1 class="display-6 fw-bold">Let's Finalize Your Order</h1>
-        <p class="col-md-8 fs-6 mb-3">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+        <p class="col-md-8 fs-6 mb-3">The process in a retail environment where a customer completes their transaction by paying for the items they have selected.The customer enters their payment details, such as credit card number, expiration date, CVV (Card Verification Value), and billing address.</p>
 
         <div class="row">
 
@@ -50,7 +50,7 @@
                         <form method="POST" class="collapse multi-collapse mt-3" id="areaPayOnline">
                             <img src="img/site/card_companies.png" class='mb-3' height="28px" alt="cards" />
                             <div class="form-floating mb-3">
-                                <input type="int" name="card" class="form-control" id="inputCard" placeholder="4321 5432 6543 2765" required>
+                                <input type="int" name="card" class="form-control" autocomplete="off"  id="inputCard" placeholder="4321 5432 6543 2765" required>
                                 <label for="inputCard">Credit Card Number</label>
                             </div>
                             <div class="form-floating mb-3">

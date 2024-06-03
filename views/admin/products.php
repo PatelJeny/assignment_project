@@ -25,7 +25,7 @@
 
     if (count($productList) > 0) {
     ?>
-        <div class="container">
+        <div class="container mb-5 pb-5">
             <?php foreach ($productList as $product) { ?>
                 <div class="card mb-2">
                     <div class="row p-2 align-items-center">
