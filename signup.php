@@ -11,7 +11,7 @@ $signupUser = null;
 
 if (isset($_POST["name"]) && isset($_POST["phone"]) && isset($_POST["email"]) && isset($_POST["password"])) {
     //true or false
-    $signupUser = $controllerSignup->create_user($_POST["name"], $_POST["phone"], $_POST["email"], $_POST["password"], preg_replace('/\r?\n|\r/', '', $_POST["address"]));
+    $signupUser = $controllerSignup->create_user($_POST["name"], $_POST["phone"], $_POST["email"], md5($_POST["password"]), preg_replace('/\r?\n|\r/', '', $_POST["address"]));
 
     if ($signupUser === true) {
         header("Location:login.php");

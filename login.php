@@ -11,7 +11,7 @@ $controllerLogin->start_session();
 $loggedInUser=null;
 
 if (isset($_POST["email"]) && isset($_POST["password"])) {
-    $loggedInUser = $controllerLogin->checkAuth($_POST["email"], $_POST["password"]);
+    $loggedInUser = $controllerLogin->checkAuth($_POST["email"], md5($_POST["password"]));
     if($loggedInUser){
         //set into session
         $_SESSION['user_id'] = $loggedInUser->id;

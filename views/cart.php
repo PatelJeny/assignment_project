@@ -12,9 +12,10 @@
     <?php require_once 'views/common/header.php'; ?>
 
 
-    <div class="container py-3 mb-5">
+    <div class="container pb-5 mb-5">
         <h1 class="display-6 fw-bold">Your Cart (<?= count($_SESSION['cart_products']) ?>)</h1>
-        <p class="fs-6">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p><br><br>
+        <p class="fs-6">It functions as a virtual container where users can add, remove, and modify products before
+             proceeding to checkout. Typically, when users browse a website and find items they want to buy, they can add them to their shopping cart by clicking on an "Add to Cart" button next to each product.</p><br><br>
 
 
 

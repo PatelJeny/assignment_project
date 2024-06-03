@@ -38,9 +38,10 @@
                         <div class="col-md-2">
                             <?= $order["phone"] ?>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <?= $order["address"] ?>
                         </div>
+                       
                     </div>
                 </div>
             <?php

@@ -29,7 +29,7 @@
             ?>
 
             <div class="alert alert-success" role="alert">
-                Product Added To Cart
+                Product Added To Cart  <a href="/cart.php">My Cart</a>
             </div>
 
 

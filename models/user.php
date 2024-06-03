@@ -54,6 +54,7 @@ class User {
     }
 
     public static function isAuthorized($email,$password){
+        
         $userResult = executeQuery("SELECT * FROM users WHERE email='$email' AND password='$password'");
         if($userResult->num_rows>0){
             $userRow = $userResult->fetch_assoc();
@@ -63,6 +64,7 @@ class User {
     }
 
     public static function saveUser($name,$phone,$email,$password,$address){
+        
         return executeQuery("INSERT INTO users(name,phone,email,password,address) VALUES('$name','$phone','$email','$password','$address')");
 
     }
